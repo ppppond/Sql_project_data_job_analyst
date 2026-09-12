@@ -1,0 +1,13 @@
+ALTER TABLE job_applied
+ADD contact VARCHAR(50)
+
+ALTER TABLE job_applied
+ADD test VARCHAR(50)
+
+ALTER TABLE job_applied
+DROP test
+
+ALTER TABLE job_applied
+RENAME contact to contacts
+
+SELECT * FROM job_applied
